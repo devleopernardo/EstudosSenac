@@ -1,0 +1,835 @@
+[33mcommit 180bae24c6425f6193f052e004b7a7c4ccb0631d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Leonardo Alves <devleopernardo@gmail.com>
+Date:   Tue Dec 31 17:12:53 2024 -0300
+
+    ProgrammingLogic
+
+[1mdiff --git a/EXERCI22.ALG b/EXERCI22.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5f6489d[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCI22.ALG[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32mAlgoritmo "Exerci22"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m
+[32m+[m[32m// Descrição   : 22 - Faça um programa que leia três números inteiros[m
+[32m+[m[32m// e exiba o resultado da divisão inteira do primeiro pelo segundo e[m
+[32m+[m[32m// depois do resultado pelo terceiro.[m
+[32m+[m[32m// (Lembrando use o DIV)[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : 10/10/2024[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   num1, num2, num3 : inteiro[m
+[32m+[m[32m   divisao1, divisao2 : inteiro[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m[32m   escreval (" Digite 3 numeros")[m
+[32m+[m[32m   leia(num1)[m
+[32m+[m[32m   leia(num2)[m
+[32m+[m[32m   leia(num3)[m
+[32m+[m[41m   [m
+[32m+[m[32m   divisao1 <- num1 div num2[m
+[32m+[m[32m   divisao2 <- divisao1 div num3[m
+[32m+[m[41m   [m
+[32m+[m[32m   escreval (" O resultado das divisoes eh:", divisao2)[m
+[32m+[m[41m   [m
+[32m+[m[41m   [m
+[32m+[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/EXERCICIO 15.ALG b/EXERCICIO 15.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1512ab8[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO 15.ALG[m	
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32mAlgoritmo "Exercicio 15"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m[32m// Descrição   : 15 - Faça um programa que leia um número inteiro e[m
+[32m+[m[32m// mostre o seu antecessor e seu sucessor.[m
+[32m+[m[32m// Autor(a)    : leonardo[m
+[32m+[m[32m// Data atual  : 08/10/2024[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   numeroDigitado, numeroDigitadoAntecessor, numeroDigitadoSucessor : inteiro[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   escreval("Digite um numero inteiro e direi seu Antecessor e Sucessor:")[m
+[32m+[m[32m   leia(numeroDigitado)[m
+[32m+[m[32m   numeroDigitadoAntecessor <- numeroDigitado - 1[m
+[32m+[m[32m   numeroDigitadoSucessor <- numeroDigitado + 1[m
+[32m+[m
+[32m+[m[32m   escreval ("Resposta:", numeroDigitadoAntecessor, " e", numeroDigitadoSucessor )[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/EXERCICIO 17.ALG b/EXERCICIO 17.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..823fff3[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO 17.ALG[m	
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32mAlgoritmo "Exercicio 17"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m[32m// Descrição   : 17 - Faça um algoritmo que leia o salário de[m
+[32m+[m[32m// um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : 09/10/2024[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   salario : real[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   escreval ("Qual o salario do funcionario")[m
+[32m+[m[32m   leia (salario)[m
+[32m+[m
+[32m+[m[32m   salario <- salario * (15/100) + salario[m
+[32m+[m
+[32m+[m[32m   escreval ("O novo salario eh: ", salario)[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/EXERCICIO 18.ALG b/EXERCICIO 18.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..73981d5[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO 18.ALG[m	
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32mAlgoritmo "Exercicio 18"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m[32m// Descrição   : 18 - Faça um programa que leia o preço de um produto,[m
+[32m+[m[32m// calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : 09/10/2024[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   preco : real[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   escreval ("Qual o valor do produto: R$ ")[m
+[32m+[m[32m   leia (preco)[m
+[32m+[m
+[32m+[m[32m   preco <- preco - preco * (5/100)[m
+[32m+[m
+[32m+[m[32m   escreval ("O novo preco com desconto de 5% é: ", preco)[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/EXERCICIO12.alg b/EXERCICIO12.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..13c51f3[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO12.alg[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32malgoritmo "Exercício 12"[m
+[32m+[m[32m// Função : Exercício 12 -  Faça um algoritmo que o programa leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.[m
+[32m+[m[32m// Ex:[m
+[32m+[m[32m// Nota 1: 4.5[m
+[32m+[m[32m// Nota 2: 8.5[m
+[32m+[m[32m// A média entre 4.5 e 8.5 é igual a 6.5[m
+[32m+[m
+[32m+[m[32m// Autor : Leonardo[m
+[32m+[m[32m// Data : 10/7/2024[m
+[32m+[m[32m// Seção de Declarações[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mnota1, nota2, media : real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m
+[32m+[m
+[32m+[m[32mescreval("Aluno, Digite suas 2 notas: ")[m
+[32m+[m
+[32m+[m[32mleia(nota1)[m
+[32m+[m[32mleia(nota2)[m
+[32m+[m
+[32m+[m[32mmedia <- (nota1 + nota2)/2[m
+[32m+[m
+[32m+[m[32mescreval( "A sua media eh ", media)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+[1mdiff --git a/EXERCICIO29.ALG b/EXERCICIO29.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8fa84ef[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO29.ALG[m
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m[32mAlgoritmo "Exercício 29"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m
+[32m+[m[32m// Descrição   : Exercício 29 - Escreva um algoritmo que receba[m
+[32m+[m[32m// um número inteiro e exiba se ele é par ou ímpar.[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 14/10/2024[m
+[32m+[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   numero : inteiro[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   escreval("Digite um numero")[m
+[32m+[m[32m   leia (numero)[m
+[32m+[m
+[32m+[m[32m   se numero mod 2 = 0 entao[m
+[32m+[m[32m      escreval ("Esse numero eh Par")[m
+[32m+[m[32m   senao[m
+[32m+[m[32m      escreval ("Eh Impar ")[m
+[32m+[m
+[32m+[m[32m   fimse[m
+[32m+[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+[1mdiff --git a/EXERCICIO2TESTELACOPARA.ALG b/EXERCICIO2TESTELACOPARA.ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7d39f68[m
+[1m--- /dev/null[m
+[1m+++ b/EXERCICIO2TESTELACOPARA.ALG[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32mAlgoritmo "Exercicio2TESTELacoPARA"[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   :[m
+[32m+[m[32m// Descrição   : Aqui você descreve o que o programa faz! (função)[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : 04/11/2024[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m[32m   contador: inteiro[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   para contador de 10 ate 50 passo 5 faca[m
+[32m+[m[32m      escreva (contador)[m
+[32m+[m[32m   fimpara[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio47.alg b/Exercicio47.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5d143c8[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio47.alg[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32malgoritmo "Exercicio 47"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : ExercÃ­cio 47[m
+[32m+[m[32m// Crie um programa que peÃ§a ao usuÃ¡rio para digitar nÃºmeros.[m[41m [m
+[32m+[m[32m// O programa deve continuar pedindo nÃºmeros atÃ© que o usuÃ¡rio digite um nÃºmero negativo.[m[41m [m
+[32m+[m[32m// Quando isso acontecer, o programa deve parar e exibir uma mensagem "Programa finalizado".[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 25/10/2024[m
+[32m+[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mtypedNumber: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mtypedNumber <- 1[m
+[32m+[m[32menquanto (typedNumber >= 0) faca[m
+[32m+[m[32m    escreval ("Digite um nÃºmero: ")[m
+[32m+[m[32m    leia (typedNumber)[m
+[32m+[m[32mfimenquanto[m
+[32m+[m
+[32m+[m[32mescreval ("Programa Finalizado!")[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio49.alg b/Exercicio49.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b9dc70c[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio49.alg[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32malgoritmo "Exercicio 49"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : Crie um programa que peÃ§a ao usuÃ¡rio para digitar nÃºmeros.[m[41m [m
+[32m+[m[32m// O programa deve parar de pedir nÃºmeros quando o usuÃ¡rio digitar "0" e, ao final, exibir a soma de[m[41m [m
+[32m+[m[32m// todos os nÃºmeros digitados.[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 25/10/2024[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mnumbers: real[m
+[32m+[m[32msum: real[m
+[32m+[m[32mtotal: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mnumbers <- 1[m
+[32m+[m[32menquanto (numbers <> 0) faca[m
+[32m+[m[32m    escreval ("Digite alguns numeros e realizarei soma deles (Digite 0 para encerrar o Programa):")[m
+[32m+[m[32m    leia (numbers)[m
+[32m+[m[32m    sum <- sum + numbers[m
+[32m+[m[32m    total <- sum[m[41m [m
+[32m+[m
+[32m+[m[32mfimenquanto[m
+[32m+[m
+[32m+[m[32mescreval ("A Somatoria dos numeros digitados Ã© : ", total)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio52.alg b/Exercicio52.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e9db3d6[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio52.alg[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32malgoritmo "Exercicio 52"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : ExercÃ­cio 52[m
+[32m+[m[32m// FaÃ§a um programa que solicite ao usuÃ¡rio para digitar nÃºmeros e no final "some todos os nÃºmeros que o usuÃ¡rio digitou " de uma vez.[m[41m [m
+[32m+[m[32m// O programa deve parar quando o usuÃ¡rio digitar "0".[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mnumbers, sum: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mnumbers <- 1[m
+[32m+[m[32menquanto (numbers <> 0) faca[m
+[32m+[m[32m    escreval ("Digite um Numero:")[m
+[32m+[m[32m    leia (numbers)[m
+[32m+[m[32m    sum <- numbers + sum[m
+[32m+[m[32mfimenquanto[m
+[32m+[m
+[32m+[m[32mescreval("A Soma de todos os Numeros digitados eh: ", sum)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio55.alg b/Exercicio55.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5c21981[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio55.alg[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32malgoritmo "Exercicio55-LacoPARA"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m[32m// DescriÃ§Ã£o   : 55 -  Crie um programa usando o "PARA" que mostre a contagem de 1 a 10.[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mcounter: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mpara counter de 1 ate 10 faca[m
+[32m+[m[32m    escreval (counter)[m
+[32m+[m[32mfimpara[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio59.alg b/Exercicio59.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c044f92[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio59.alg[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32malgoritmo "Exercicio59"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m[32m// DescriÃ§Ã£o   : 59 -  Crie um programa usando o "PARA" que mostre a contagem dos nÃºmeros mÃºltiplos de 3 de 1 a 30.[m
+[32m+[m[32m// Autor(a)    : Nome do(a) aluno(a)[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mcounter: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mpara counter de 3 ate 30 passo 3 faca[m
+[32m+[m[32m    escreval (counter)[m
+[32m+[m[32mfimpara[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio67 (1).alg b/Exercicio67 (1).alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9f9bfc4[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio67 (1).alg[m	
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32malgoritmo "Nome do Programa"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m[32m// DescriÃ§Ã£o   : 67 -  Crie um programa usando o "PARA" que conte quantos nÃºmeros pares e Ã­mpares existem entre 1 e 100.[m
+[32m+[m[32m// Autor(a)    : Nome do(a) aluno(a)[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mpar: real[m
+[32m+[m[32mcontadorPar: inteiro[m
+[32m+[m[32mcontadorImpar: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mpara par de 1 ate 100 faca[m
+[32m+[m[32m    se (par % 2 = 0) entao[m
+[32m+[m[32m        contadorPar <- contadorPar + 1[m
+[32m+[m[32m    senao[m
+[32m+[m[32m        contadorImpar <- contadorImpar + 1[m
+[32m+[m[32m    fimse[m
+[32m+[m
+[32m+[m[32mfimpara[m
+[32m+[m
+[32m+[m[32mescreval ("A Quantidade de numeros pares: ", contadorPar)[m
+[32m+[m[32mescreval ("A Quantidade de numeros impares: ", contadorImpar)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio69.alg b/Exercicio69.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2729650[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio69.alg[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32malgoritmo "Nome do Programa"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m[32m// DescriÃ§Ã£o   : 69 - Crie um programa usando o "PARA" que calcule a soma dos nÃºmeros Ã­mpares de 1 a 10.[m
+[32m+[m[32m// Autor(a)    : Nome do(a) aluno(a)[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32moddNumbers: inteiro[m
+[32m+[m[32mcounter: inteiro[m
+[32m+[m[32moddSum: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mpara counter de 1 ate 10 passo 2 faca[m
+[32m+[m[32m    escreval (counter)[m
+[32m+[m[32m    oddSum <- oddSum + counter[m
+[32m+[m[32mfimpara[m
+[32m+[m
+[32m+[m[32mescreval ("A Soma dos numeros eh: ", oddSum)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio72 (1).alg b/Exercicio72 (1).alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..24606dd[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio72 (1).alg[m	
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32malgoritmo "Exercicio 72 Laco Repita"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : Rafael Bomfim[m[41m [m
+[32m+[m[32m// DescriÃ§Ã£o   : 72 -  Crie um programa usando o "Repita" que mostre quantos nÃºmeros pares existem de 1 a 20.[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 18/11/2024[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mcounter: inteiro[m
+[32m+[m[32mcontador: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mcounter <- 1[m
+[32m+[m[32mrepita[m
+[32m+[m[32m    se (counter % 2 = 0) entao[m
+[32m+[m[32m        escreval (counter)[m
+[32m+[m[32m        contador <- contador + 1[m
+[32m+[m[32m    fimse[m
+[32m+[m[32m    counter <- counter + 1[m
+[32m+[m[41m    [m
+[32m+[m[32mate counter > 20[m
+[32m+[m
+[32m+[m[32mescreval ("A quantidade de numeros pares: ", contador)[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio80Algoritmolivre.alg b/Exercicio80Algoritmolivre.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6542f46[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio80Algoritmolivre.alg[m
+[36m@@ -0,0 +1,34 @@[m
+[32m+[m[32malgoritmo "Nome do Programa"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : 80 - A padaria Bom PÃ£o vende uma certa quantidade de pÃ£es franceses e uma quantidade de broas a cada dia.[m[41m [m
+[32m+[m[32m// Cada pÃ£ozinho custa R$ 0,15 e a broa custa R$  1,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda[m[41m [m
+[32m+[m[32m// dos pÃ£es e broas (juntos), e quanto deve guardar numa conta de poupanÃ§a (10% do total arrecadado). VocÃª foi contratado para fazer os cÃ¡lculos para o dono.[m
+[32m+[m[32m// Com base nestes fatos, faÃ§a um algoritmo para ler as quantidades de pÃ£es e de broas, e depois calcular os dados solicitados.[m
+[32m+[m[32m// ObservaÃ§Ã£o: VocÃª tem liberdade para realizar essa atividade da forma que preferir.[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Nome do(a) aluno(a)[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mpaes, broas: inteiro[m
+[32m+[m[32mvalorPaes, valorBroas: real[m
+[32m+[m[32mpoupanca: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mescreval ("Quantos Paes Franceses foram vendidos?")[m
+[32m+[m[32mleia (paes)[m
+[32m+[m[32mescreval ("Quantos Broas foram vendidas?")[m
+[32m+[m[32mleia (broas)[m
+[32m+[m
+[32m+[m[32mvalorPaes <- paes * 0.15[m
+[32m+[m[32mvalorBroas <- broas * 1.5[m
+[32m+[m
+[32m+[m[32mpoupanca <- (valorPaes + valorBroas) * 0.1[m
+[32m+[m
+[32m+[m[32mescreval ("A quantia em Dinheiro vendida no dia: ", valorPaes + valorBroas)[m
+[32m+[m[32mescreval ("A quantia que deve ser guardada em Poupanca: ", poupanca)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicio82.alg b/Exercicio82.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6da4c85[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicio82.alg[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32malgoritmo "ExercÃ­cio 82 Ultimo UC lÃ³gica de ProgramaÃ§Ã£o Senac"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Rafael Bomfim][m
+[32m+[m[32m// DescriÃ§Ã£o   : 82 - Crie um programa que Encontrar o menor nÃºmero entre N (Usando laÃ§o de repetiÃ§Ã£o Enquanto).[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 25/11/2024[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mquantosNumeros: inteiro[m
+[32m+[m[32mnumero: real[m
+[32m+[m[32mcontador: inteiro[m
+[32m+[m[32mmenorNumero: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mescreval("Digite quantos nÃºmeros deseja digitar:")[m
+[32m+[m[32mleia(quantosNumeros)[m
+[32m+[m
+[32m+[m[32mmenorNumero <- 10000000000000000000000000000000000[m
+[32m+[m[32m enquanto (quantosNumeros > contador) faca[m
+[32m+[m[32m    escreval("Digite um NÃºmero:")[m
+[32m+[m[32m    leia(numero)[m
+[32m+[m[41m    [m
+[32m+[m[32m    se (numero < menorNumero) entao[m
+[32m+[m[32m        menorNumero <- numero[m
+[32m+[m[32m    fimse[m[41m [m
+[32m+[m
+[32m+[m[32m    contador <- contador + 1[m
+[32m+[m[32m fimenquanto[m
+[32m+[m
+[32m+[m[32mescreval ("O menor nÃºmero entre os digitados Ã©: ", menorNumero)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/ExercicioGrupo3.alg b/ExercicioGrupo3.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6faec8a[m
+[1m--- /dev/null[m
+[1m+++ b/ExercicioGrupo3.alg[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32malgoritmo "Nome do Programa"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : [Nome do Professor][m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : Desafio: Descubra o NÃºmero Secreto[m
+[32m+[m[32m// DescriÃ§Ã£o: O programa deve ler um nÃºmero do usuÃ¡rio e verificar se esse nÃºmero Ã© o "nÃºmero secreto". O nÃºmero secreto Ã© definido como sendo divisÃ­vel por 3,[m[41m [m
+[32m+[m[32m// maior que 10, e menor que 100. O programa deve informar se o nÃºmero digitado pelo usuÃ¡rio atende a essas condiÃ§Ãµes ou nÃ£o.[m
+[32m+[m
+[32m+[m[32m// Se nao atender a condicao repetir ate acertar o numero secreto.[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Nome do(a) aluno(a)[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32msecretNumb: inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mescreval("Adivinhe o numero secreto: ")[m
+[32m+[m[32mleia(secretNumb)[m
+[32m+[m
+[32m+[m[32mrepita[m
+[32m+[m[32m    se (verdadeiro) entao[m
+[32m+[m[32m    escreval("Acertou Miseravi")[m
+[32m+[m[32m    senao[m
+[32m+[m[32m    escreval ("ERROU")[m
+[32m+[m[32m    fimse[m
+[32m+[m
+[32m+[m[32mate (secretNumb > 10) e (secretNumb < 100) e (secretNumb % 3 = 0)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/Exercicios45.alg b/Exercicios45.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7f47c4d[m
+[1m--- /dev/null[m
+[1m+++ b/Exercicios45.alg[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32malgoritmo "Exercicio45"[m
+[32m+[m[32m// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o][m
+[32m+[m[32m// Professor   : Rafael[m
+[32m+[m
+[32m+[m[32m// DescriÃ§Ã£o   : Crie um programa Fatorial de um nÃºmero.[m
+[32m+[m[32m// O fatorial de um nÃºmero Ã© o produto dele pelos seus antecessores maiores que 0. O fatorial de um nÃºmero Ã© a multiplicaÃ§Ã£o[m[41m [m
+[32m+[m[32m// desse nÃºmero por todos os seus antecessores maiores que zero. Para representar o fatorial de um nÃºmero,[m[41m [m
+[32m+[m[32m// escrevemos o nÃºmero seguido de um ponto de exclamaÃ§Ã£o, ou seja, n! (lÃª-se â€œn fatorialâ€).[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo[m
+[32m+[m[32m// Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL[m
+[32m+[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mcounter: real[m
+[32m+[m[32mtypedNumber: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m
+[32m+[m[32mescreval("Digite um numero e direi seu Fatorial:")[m
+[32m+[m[32mleia(typedNumber)[m
+[32m+[m
+[32m+[m[32mcounter <- typedNumber[m
+[32m+[m
+[32m+[m[32menquanto (counter > 1) faca[m
+[32m+[m[32m    counter <- counter - 1[m
+[32m+[m[32m    typedNumber <- typedNumber * (counter)[m
+[32m+[m[41m    [m
+[32m+[m[32mfimenquanto[m
+[32m+[m
+[32m+[m[32mescreval ("O Resultado do Fatorial do Numero digitado Ã©: ", typedNumber)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/PRIMEIRODESAFIO (1).ALG b/PRIMEIRODESAFIO (1).ALG[m
+[1mnew file mode 100644[m
+[1mindex 0000000..efef5b2[m
+[1m--- /dev/null[m
+[1m+++ b/PRIMEIRODESAFIO (1).ALG[m	
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32mAlgoritmo "PrimeiroDesafio"[m
+[32m+[m
+[32m+[m[32m// Disciplina   : [Linguagem e Lógica de Programação][m
+[32m+[m[32m// Professor   : Rafael Bomfim[m
+[32m+[m
+[32m+[m[32m// Descrição   : [DESAFIO] Escreva um programa para calcular a redução do[m
+[32m+[m[32m// tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados[m
+[32m+[m[32m// por dias e quantos anos ele já fumou. Considere que um fumante[m
+[32m+[m[32m// perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um[m
+[32m+[m[32m// fumante perderá e exiba o total em dias.[m
+[32m+[m
+[32m+[m[32m// Autor(a)    : Leonardo Alves[m
+[32m+[m[32m// Data atual  : 10/10/2024[m
+[32m+[m
+[32m+[m[32mVar[m
+[32m+[m[32m   // Seção de Declarações das variáveis[m
+[32m+[m
+[32m+[m[32m   tempoMinutos, tempoDias : inteiro[m
+[32m+[m[32m   cigarrosFumados, cigarrosDia : inteiro[m
+[32m+[m[32m   anosFumados : inteiro[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32m   // Seção de Comandos, procedimento, funções, operadores, etc...[m
+[32m+[m
+[32m+[m[32m   escreval ("Se você é um fumante vamos descobrir o tempo que você perdeu na vida?")[m
+[32m+[m[32m   escreval ("Digite quantos cigarros você fuma por dia:")[m
+[32m+[m[32m   leia (cigarrosDia)[m
+[32m+[m[32m   escreval ("Digite quantos anos você já fumou:")[m
+[32m+[m[32m   leia (anosFumados)[m
+[32m+[m
+[32m+[m[32m   cigarrosFumados <- cigarrosDia * 365 * anosFumados        // Descobrindo quantos Cigarros foram Pitados.[m
+[32m+[m
+[32m+[m[32m   tempoMinutos <- cigarrosFumados * 10             // Descobrindo quantos minutos o fumante perdeu. Sendo um Cigarro Equivale a 10 minutos[m
+[32m+[m
+[32m+[m[32m   tempoDias <- tempoMinutos div 1440             // Descobrindo quantos dias o fumante perdeu ao todo.[m
+[32m+[m
+[32m+[m[32m   escreval ("A quantidade de dias perdidos fumando foi: ", tempoDias)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mFimalgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio26.alg b/exercicio26.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a48b678[m
+[1m--- /dev/null[m
+[1m+++ b/exercicio26.alg[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32malgoritmo "Exercicio26"[m
+[32m+[m[32m// Função : 26 - Faça um programa que leia a nota de um aluno e verifique se ele foi aprovado (nota maior ou igual a 7) ou reprovado.[m
+[32m+[m[32m// Autor :[m
+[32m+[m[32m// Data : 14/10/2024[m
+[32m+[m[32m// Seção de Declarações[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mnota : real[m
+[32m+[m[32mnome : caractere[m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m
+[32m+[m
+[32m+[m[32mescreval ("Qual o Nome do Aluno")[m
+[32m+[m[32mleia (nome)[m
+[32m+[m[32mescreval ("Qual foi a sua nota")[m
+[32m+[m[32mleia (nota)[m
+[32m+[m
+[32m+[m[32mse nota >= 7  entao[m
+[32m+[m[32m   escreval(nome, " você foi Aprovado!")[m
+[32m+[m[32msenao[m
+[32m+[m[32m   escreval(nome, " você Foi reprovado!")[m
+[32m+[m[32mfimse[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+[1mdiff --git a/exercicio27.alg b/exercicio27.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cb1a9a0[m
+[1m--- /dev/null[m
+[1m+++ b/exercicio27.alg[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32malgoritmo "Exercio27"[m
+[32m+[m[32m// Função : 27 - Escreva um algoritmo que receba dois números inteiros e determine se eles são iguais ou diferentes.[m
+[32m+[m[32m// Autor : Leonardo[m
+[32m+[m[32m// Data : 14/10/2024[m
+[32m+[m[32m// Seção de Declarações[m
+[32m+[m[32mvar[m
+[32m+[m
+[32m+[m[32mnumero1, numero2 : inteiro[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m
+[32m+[m
+[32m+[m[32mescreval ("Digite 2 numeros inteiros e direi se são iguais ou diferentes:")[m
+[32m+[m[32mleia(numero1)[m
+[32m+[m[32mleia(numero2)[m
+[32m+[m
+[32m+[m[32mse numero1 = numero2 entao[m
+[32m+[m[32m   escreval("São iguais")[m
+[32m+[m[32msenao[m
+[32m+[m[32m   escreval("São diferentes")[m
+[32m+[m[32mfimse[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+[1mdiff --git a/exerciocio 8.alg b/exerciocio 8.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c41a860[m
+[1m--- /dev/null[m
+[1m+++ b/exerciocio 8.alg[m	
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32malgoritmo "Exercício 8"[m
+[32m+[m[32m// Função :  Exercício 8 - Faça um algoritmo que receba 2 caracteres, e informe que "Os dois Instrutores de lógica de programação são:" Hermínio e Rafael.[m
+[32m+[m[32m// Autor : Leonardo[m
+[32m+[m[32m// Data : 04/10/2024[m
+[32m+[m[32m// Seção de Declarações[m[41m [m
+[32m+[m[32mvar[m
+[32m+[m[32m    prof1, prof2 : caractere[m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m[41m [m
+[32m+[m
+[32m+[m[32mprof1 <- "Herminio "[m
+[32m+[m[32mprof2 <- "Rafael "[m
+[32m+[m
+[32m+[m[32mescreval ("Os dois Instrutores de lógica de programação são: ", prof1 + "e " + prof2)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+[1mdiff --git a/mediade3numeros.alg b/mediade3numeros.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..84609a3[m
+[1m--- /dev/null[m
+[1m+++ b/mediade3numeros.alg[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32malgoritmo "Exercício 7"[m
+[32m+[m[32m// Função :  Exercício 7 - Crie um Algoritmo que faça a média dos 3 números digitados pelo usuário.[m
+[32m+[m[32m// Autor : Leonardo[m
+[32m+[m[32m// Data : 04/10/2024[m
+[32m+[m[32m// Seção de Declarações[m[41m [m
+[32m+[m[32mvar[m
+[32m+[m[32m    num1, num2, num3, media : real[m
+[32m+[m[41m    [m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m[41m [m
+[32m+[m
+[32m+[m[32mescreval ("Digite o primeiro numero:")[m
+[32m+[m[32mleia (num1)[m
+[32m+[m[32mescreval ("Digite o sego numero:")[m
+[32m+[m[32mleia (num2)[m
+[32m+[m[32mescreval ("Digite o primeiro numero:")[m
+[32m+[m[32mleia (num3)[m
+[32m+[m
+[32m+[m[32mmedia <- (num1 + num2 + num3)/3[m
+[32m+[m
+[32m+[m[32mescreval("A média dos 3 numeros é: ", media)[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
+[1mdiff --git a/somade3numeros.alg b/somade3numeros.alg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e214780[m
+[1m--- /dev/null[m
+[1m+++ b/somade3numeros.alg[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32malgoritmo "Soma de 3 Numeros"[m
+[32m+[m[32m// Função :  Exercício 6 - Crie um Algoritmo que calcule e exiba a soma dos primeiros 3 números.[m
+[32m+[m[32m// Autor :  Leonardo[m
+[32m+[m[32m// Data : 04/10/2024[m
+[32m+[m[32m// Seção de Declarações[m
+[32m+[m[32mvar[m
+[32m+[m[32mnum1, num2, num3, soma: real[m
+[32m+[m
+[32m+[m[32minicio[m
+[32m+[m[32m// Seção de Comandos[m
+[32m+[m
+[32m+[m[32mescreval ("Digite seu primeiro número:")[m
+[32m+[m[32mleia(num1)[m
+[32m+[m[32mescreval ("Digite seu segundo número:")[m
+[32m+[m[32mleia(num2)[m
+[32m+[m[32mescreval ("Digite seu terceiro número:")[m
+[32m+[m[32mleia(num3)[m
+[32m+[m[32msoma <- num1 + num2 + num3[m
+[32m+[m[32mescreval("A soma dos 3 números é: ", soma)[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfimalgoritmo[m
