@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern CSS</title>
+    <style>
+        body{
+
+        }
+        footer{
+
+        }
+        img{
+
+        }
+        table{
+
+        }
+        p{
+                
+        }
+    </style>
+</head>
+<body>
+    <h1>Text with something</h1>
+    <footer>
+        <img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bdca9bcacc1f8231373339_648195da64a3035c490b3143_697308974c2a5ba4acc36114684133820c430dbd-1600x1200.png" alt="">
+    </footer>
+    
+</body>
+</html>
