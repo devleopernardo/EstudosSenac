@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px 30px;
+    width: 40%;
+    height: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    
+    font-size: 20px;    
+}
+
+label {
+    display: block;
+    
+}
+
+button {
+    background-color: greenyellow;
+    border-radius: 8px;
+    display: flex;
+}
