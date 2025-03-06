@@ -6,9 +6,11 @@ form{
     background-color: white;
     border-radius: 10px;
     padding: 10px 30px 30px;
-    width: 40%;
+    max-width: 200px;
     height: 30%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-top: 100px;
 }
 
 h1 {
@@ -23,7 +25,17 @@ label {
 }
 
 button {
-    background-color: greenyellow;
     border-radius: 8px;
     display: flex;
+    width: 60%;
+    margin-bottom: 10px;
 }
+
+button[type="submit"] {
+    background-color: rgb(10, 216, 147);
+}
+
+button[type="reset"] {
+    background-color: rgb(187, 10, 10);
+}
+
