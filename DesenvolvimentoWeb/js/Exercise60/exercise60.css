@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    padding-top: 200px;
+}
+
+#but{
+    background-color: yellowgreen;
+    color: blueviolet;
+    width: 400px;
+    height: 200px;
+    font-size: xx-large;
+}
